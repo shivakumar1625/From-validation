@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Layout</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="form-container">
+        <h1>Fill Out The Form To Enroll Our Service </h1>
+        <form id="main-form" action="/" method="get">
+            
+            <div class="input-row">
+                <div class="input-controller">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" placeholder="Enter your full name">
+                    <div id="username_error" class="error"></div>
+                </div>
+                <div class="input-controller">
+                    <label for="email">Email</label>
+                    <input type="text" id="email" name="email" placeholder="Enter your email">
+                    <div id="email_error" class="error"></div>
+                </div>
+            </div>
+
+            <div class="input-controller">
+                <label for="location">Location</label>
+                <input type="text" id="location" name="location" placeholder="Enter your location">
+                <div id="location_error" class="error"></div>
+            </div>
+
+            <div class="input-controller">
+                <label for="country">Country</label>
+                <select id="country" name="country">
+                    <option value="">Select your country</option>
+                    <option value="India">India</option>
+                    <option value="USA">USA</option>
+                    <option value="UK">UK</option>
+                </select>
+                <div id="country_error" class="error"></div>
+            </div>
+
+            <div class="input-row">
+                <div class="input-controller">
+                    <label for="city">City</label>
+                    <input type="text" id="city" name="city" placeholder="Enter your city">
+                    <div id="city_error" class="error"></div> 
+                </div>
+                <div class="input-controller">
+                    <label for="state">State</label>
+                    <input type="text" id="state" name="state" placeholder="Enter your state">
+                    <div id="state_error" class="error"></div>
+                </div>
+            </div>
+
+            <div class="input-controller">
+                <label>May we send information about us to the mailing address?</label>
+                <div class="radio-group">
+                    <input type="radio" id="yes" name="mailing-info" value="Yes">
+                    <label for="yes">Yes</label>
+                    <input type="radio" id="no" name="mailing-info" value="No">
+                    <label for="no">No</label>
+                    <div id="yesno_error" class="error"></div>
+                </div>
+            </div>
+
+            <div class="submit-btn-container">
+                <button type="submit" id="submit-button">Submit</button>
+            </div>
+        </form>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
